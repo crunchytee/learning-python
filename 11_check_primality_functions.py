@@ -1,16 +1,9 @@
 def get_divisors(input):
-    divisors = []
-    for num in range(2, input):
-        if input % num == 0:
-            divisors.append(num)
-    return divisors
+    return [num for num in range(2, input) if input % num == 0]
 
 def is_number_prime(input):
     divisors = get_divisors(input)
-    if divisors == []:
-        return True
-    else:
-        return False
+    return divisors == []
 
 def get_int_input():
     try:

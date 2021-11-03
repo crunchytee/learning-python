@@ -6,7 +6,6 @@ def get_input():
     
 def generate_fibonacci():
     results = [1, 1]
-    last_number = 0
     input = get_input()
 
     if input > 1:
